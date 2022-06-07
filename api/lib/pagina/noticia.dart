@@ -72,6 +72,12 @@ class Noticia extends StatelessWidget {
                                   height: 10,
                                 ),
                                 Container(
+                                  margin: EdgeInsets.all(5),
+                                  padding: EdgeInsets.all(15),
+                                  decoration: BoxDecoration(
+                                    color: Color.fromARGB(255, 250, 250, 250),
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
                                   child: Text(
                                     '$title',
                                     style: const TextStyle(
