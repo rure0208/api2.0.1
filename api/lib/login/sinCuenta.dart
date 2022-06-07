@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 
-class Alertas extends StatefulWidget {
-  Alertas({Key? key}) : super(key: key);
+class SinCuenta extends StatefulWidget {
+  SinCuenta({Key? key}) : super(key: key);
 
   @override
-  State<Alertas> createState() => _AlertasState();
+  State<SinCuenta> createState() => _SinCuentaState();
 }
 
-class _AlertasState extends State<Alertas> {
+class _SinCuentaState extends State<SinCuenta> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
       title: const Text('Notificacion'),
-      content: const Text(
-          "Correo o Contraseña no validos favor de verificar los datos"),
+      content: const Text("Sin Miedo Al Exito"),
       actions: <Widget>[
         FloatingActionButton(
             backgroundColor: const Color.fromARGB(240, 0, 24, 69),
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: const Text("Ok")),
+            child: const Text("Let'sGo")),
       ],
     );
   }

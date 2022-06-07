@@ -1,4 +1,5 @@
 import 'package:api/login/alertdialog.dart';
+import 'package:api/login/sinCuenta.dart';
 import 'package:flutter/material.dart';
 
 import '../pagina/Navegacion.dart';
@@ -55,7 +56,7 @@ class _LoginState extends State<Login> {
                     controller: nameController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'User Name',
+                      labelText: 'Usuario',
                     ),
                     onChanged: (valor) => setState(() {
                           _nombre = valor;
@@ -68,7 +69,7 @@ class _LoginState extends State<Login> {
                     controller: passwordController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'Password',
+                      labelText: 'Contraseña',
                     ),
                     onChanged: (valor) => setState(() {
                           _password = valor;
@@ -78,7 +79,8 @@ class _LoginState extends State<Login> {
                 padding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
                 child: ElevatedButton(
                     onPressed: () {
-                      if (_nombre == "admin" && _password == "admin") {
+                      if (_nombre == "er388928@gmail.com" &&
+                          _password == "010203") {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
@@ -97,8 +99,25 @@ class _LoginState extends State<Login> {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
-                  Text('No tiene Cuenta?'),
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
+                    child: TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SinCuenta()),
+                          );
+                        },
+                        child: const Text(
+                          'Crear Cuenta',
+                          style: TextStyle(
+                              color: const Color.fromARGB(240, 0, 24, 69),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 15),
+                        )),
+                  ),
                 ],
               ),
             ],
