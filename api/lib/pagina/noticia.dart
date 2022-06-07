@@ -51,7 +51,7 @@ class Noticia extends StatelessWidget {
                       child: Card(
                         elevation: 20,
                         shadowColor: Colors.black,
-                        color: Color.fromARGB(255, 234, 234, 234),
+                        color: const Color.fromARGB(255, 234, 234, 234),
                         child: SizedBox(
                           width: 400,
                           // height: 700,
@@ -72,10 +72,11 @@ class Noticia extends StatelessWidget {
                                   height: 10,
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(5),
-                                  padding: EdgeInsets.all(15),
+                                  margin: const EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(15),
                                   decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 250, 250, 250),
+                                    color: const Color.fromARGB(
+                                        255, 250, 250, 250),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Text(
@@ -92,17 +93,18 @@ class Noticia extends StatelessWidget {
                                   height: 10,
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(5),
-                                  padding: EdgeInsets.all(15),
+                                  margin: const EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(15),
                                   decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 219, 219, 219),
+                                    color: const Color.fromARGB(
+                                        255, 219, 219, 219),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Text(
                                     '$content',
                                     style: TextStyle(
                                       fontSize: 19,
-                                      color: Color.fromARGB(255, 0, 0, 0)
+                                      color: const Color.fromARGB(255, 0, 0, 0)
                                           .withOpacity(1),
                                     ),
                                     textAlign: TextAlign.justify,
@@ -112,8 +114,8 @@ class Noticia extends StatelessWidget {
                                   height: 10,
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(5),
-                                  padding: EdgeInsets.all(15),
+                                  margin: const EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(15),
                                   decoration: BoxDecoration(
                                     color: const Color.fromARGB(240, 0, 24, 69),
                                     borderRadius: BorderRadius.circular(20),
@@ -124,16 +126,18 @@ class Noticia extends StatelessWidget {
                                       fontSize: 20,
                                       fontStyle: FontStyle.italic,
                                       fontWeight: FontWeight.bold,
-                                      color: Color.fromARGB(255, 255, 255, 255)
+                                      color: const Color.fromARGB(
+                                              255, 255, 255, 255)
                                           .withOpacity(.8),
                                     ),
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.all(5),
-                                  padding: EdgeInsets.all(15),
+                                  margin: const EdgeInsets.all(5),
+                                  padding: const EdgeInsets.all(15),
                                   decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 219, 219, 219),
+                                    color: const Color.fromARGB(
+                                        255, 219, 219, 219),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Text(
@@ -158,7 +162,8 @@ class Noticia extends StatelessWidget {
                                     'Author: $author',
                                     style: TextStyle(
                                       fontSize: 20,
-                                      color: Color.fromARGB(255, 255, 255, 255)
+                                      color: const Color.fromARGB(
+                                              255, 255, 255, 255)
                                           .withOpacity(0.8),
                                     ),
                                   ),

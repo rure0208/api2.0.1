@@ -1,5 +1,5 @@
 import 'package:api/login/alertdialog.dart';
-import 'package:api/login/sinCuenta.dart';
+import 'package:api/login/create.dart';
 import 'package:flutter/material.dart';
 
 import '../pagina/Navegacion.dart';
@@ -14,8 +14,8 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   String _nombre = "";
   String _password = "";
-  TextEditingController nameController = new TextEditingController();
-  TextEditingController passwordController = new TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +89,8 @@ class _LoginState extends State<Login> {
                       } else {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Alertas()),
+                          MaterialPageRoute(
+                              builder: (context) => const Alertas()),
                         );
                       }
                     },
@@ -107,13 +108,13 @@ class _LoginState extends State<Login> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SinCuenta()),
+                                builder: (context) => const Cuenta()),
                           );
                         },
                         child: const Text(
                           'Crear Cuenta',
                           style: TextStyle(
-                              color: const Color.fromARGB(240, 0, 24, 69),
+                              color: Color.fromARGB(240, 0, 24, 69),
                               fontWeight: FontWeight.w600,
                               fontSize: 15),
                         )),

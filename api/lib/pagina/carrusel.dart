@@ -41,7 +41,7 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -92,7 +92,7 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -145,7 +145,7 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -197,7 +197,7 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SinCuenta extends StatefulWidget {
-  SinCuenta({Key? key}) : super(key: key);
+class Cuenta extends StatefulWidget {
+  const Cuenta({Key? key}) : super(key: key);
 
   @override
-  State<SinCuenta> createState() => _SinCuentaState();
+  State<Cuenta> createState() => _CuentaState();
 }
 
-class _SinCuentaState extends State<SinCuenta> {
+class _CuentaState extends State<Cuenta> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
