@@ -79,8 +79,8 @@ class _LoginState extends State<Login> {
                 padding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
                 child: ElevatedButton(
                     onPressed: () {
-                      if (_nombre == "er388928@gmail.com" &&
-                          _password == "010203") {
+                      if (_nombre == "admin" &&
+                          _password == "admin") {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(

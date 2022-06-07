@@ -66,7 +66,7 @@ class Newapi extends ChangeNotifier {
 
   Future getServiceTesla() async {
     final url = Uri.https(_urlbase, '/v2/everything',
-        {'q': 'tesla', 'from': '2022-06-6', 'sortBy': 'publishedAt'});
+        {'q': 'tesla', 'from': '2022-06-7', 'sortBy': 'publishedAt'});
     final respuesta = await http.get(url, headers: {'X-Api-Key': _apiKEY});
 
     final tesla = Noticias.fromJson(respuesta.body);
