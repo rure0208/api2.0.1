@@ -42,7 +42,9 @@ class Carrusel extends StatelessWidget {
                   bottom: 0,
                   top: 5,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Colors.white),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.white,
+                    ),
                     onPressed: () {
                       Navigator.push(
                         context,
