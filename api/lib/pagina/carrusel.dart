@@ -41,7 +41,8 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.white),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -92,7 +93,8 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.white),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -145,7 +147,8 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.white),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -197,7 +200,8 @@ class Carrusel extends StatelessWidget {
                   left: 20,
                   bottom: 0,
                   top: 5,
-                  child: RaisedButton(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.white),
                     onPressed: () {
                       Navigator.push(
                         context,
